@@ -497,6 +497,9 @@ export default class VsSelect extends VsComponent {
     const chips = h('button', {
       staticClass: 'vs-select__chips',
       ref: 'chips',
+      attrs: {
+        type: 'button'
+      },
       on: {
         keydown: this.handleKeydown,
         focus: (evt: Event) => {
